@@ -1,0 +1,99 @@
+---
+layout: default
+title: "evidence // v0idravl"
+description: "Selected public evidence: multi-agent offensive operations, AI red teaming, lab writeups, and offensive tooling."
+nav: projects
+---
+
+<h1>selected evidence</h1>
+<p>
+Organized for hiring conversations: what is built, what it demonstrates, and
+where to verify it. Everything here is lab-based, personal-infrastructure-based,
+or built for authorized practice — no client, production, or proprietary material.
+</p>
+
+{% include rule.html label="ai + offense" %}
+
+<h3>multi-agent offensive operations</h3>
+<p>
+A multi-agent system that plans, runs, and documents offensive operations under
+operator direction — automating low-oversight work and routing heavy, high-risk
+work to human review. The operating edge: orchestrating and judging AI for
+offensive tasks rather than running tools by hand.
+</p>
+
+<h3>AI red teaming</h3>
+<p>
+Adversarial testing of language models and the applications around them: prompt
+injection, jailbreaks, tool and agent abuse, data-exfiltration paths, and
+structured evaluation of behavior under pressure. Aligned to remote AI red team
+and model-evaluation engagements.
+</p>
+
+{% include rule.html label="public work" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
+    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">htb · pg · thm</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
+    <span class="t">hakiki</span><span class="dots"></span><span class="m">offensive reference</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
+    <span class="t">p0rtix</span><span class="dots"></span><span class="m">python recon / enum</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
+    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">linux triage</span>
+  </a>
+</div>
+
+<h3>lab-writeups</h3>
+<p>
+Documented lab engagements across Active Directory, Windows, and Linux —
+enumeration, attack-path reasoning, exploitation evidence, privilege escalation,
+impact, and remediation notes. Kerberoasting, AS-REP roasting, BloodHound paths,
+ACL abuse, ADCS ESC chains, DCSync, pass-the-hash, pivoting.
+</p>
+
+<h3>hakiki</h3>
+<p>
+A quick-reference knowledge base built from repeated lab work: recon, service
+enumeration, web exploitation, credentials, privilege escalation, pivoting,
+Active Directory, ADCS/ACL abuse, and reverse engineering — commands and decision
+points that keep assessment work consistent.
+</p>
+
+<h3>p0rtix</h3>
+<p>
+Scope-aware Python recon and enumeration: port discovery, service classification,
+web fingerprinting, directory/vhost enumeration, and — in authorized AD labs —
+credentialed SMB/LDAP enumeration, Kerberoasting, AS-REP roasting, BloodHound
+collection, and ADCS review, with evidence preserved as raw command logs.
+</p>
+
+<h3>traxerax-lite</h3>
+<p>
+Linux security triage: parses auth, nginx, fail2ban, and mail logs into
+SQLite-backed events and operator reports — the defensive view of attacker
+methodology and practical infrastructure operation.
+</p>
+
+{% include rule.html label="supporting depth" %}
+
+<pre class="kv"><span class="k">ad / internal </span> active directory attack paths, internal network methodology
+<span class="k">reversing     </span> ghidra, debugger-assisted analysis, ctf binaries
+<span class="k">binexp        </span> stack exploitation, ret2libc/rop, x86-64, gdb/pwndbg, pwntools
+<span class="k">linux         </span> public-facing services, logs, hostile-traffic patterns</pre>
+
+{% include rule.html label="profiles" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl">
+    <span class="t">github.com/v0idravl</span><span class="dots"></span><span class="m">repositories</span>
+  </a>
+  <a class="idx-item" href="https://app.hackthebox.com/profile/v0idravl">
+    <span class="t">hackthebox / v0idravl</span><span class="dots"></span><span class="m">lab history</span>
+  </a>
+</div>
+
+<p class="callout"><span class="mk">&gt;&gt;</span> public offensive-security content is sanitized and limited to lab or authorized environments.</p>
