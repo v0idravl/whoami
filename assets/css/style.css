@@ -1,0 +1,186 @@
+/* ─── Reset ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─── Variables — Kanagawa Dragon (host=blue, kali=red/orange) ─── */
+:root {
+  --bg:            #0d0d0d;
+  --surface:       #161616;
+  --code-bg:       #080808;
+  --border:        #2a2927;
+  --border-bright: #3a3836;
+  --text:          #c5c9c5;
+  --muted:         #8a8980;
+  --dim:           #5c5953;
+  --blue:          #7fb4ca;
+  --blue-bright:   #7e9cd8;
+  --green:         #8a9a7b;
+  --yellow:        #c4b28a;
+  --violet:        #957fb8;
+  --red:           #c4746e;
+  --orange:        #ffa066;
+  --mono: "JetBrains Mono", "JetBrainsMono Nerd Font", "Cascadia Code",
+          ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --measure: 84ch;
+}
+
+/* ─── Base ──────────────────────────────────────────── */
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { color: var(--blue-bright); text-decoration: underline; }
+strong { color: var(--text); font-weight: 600; }
+em { color: var(--muted); font-style: normal; }
+p { margin-bottom: 1rem; }
+ul { padding-left: 2ch; margin-bottom: 1rem; }
+li { margin-bottom: 0.2rem; }
+
+/* ─── Banner ────────────────────────────────────────── */
+.banner {
+  color: var(--blue);
+  font-size: clamp(0.32rem, 2.1vw, 0.7rem);
+  line-height: 1.15;
+  white-space: pre;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Tilde nav ─────────────────────────────────────── */
+.tilde-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5ch;
+  padding: 0.5rem 0 0.75rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.75rem;
+  font-size: 0.85rem;
+}
+.tilde-nav a { color: var(--muted); }
+.tilde-nav a:hover { color: var(--blue); text-decoration: none; }
+.tilde-nav a.active { color: var(--orange); }
+
+/* ─── Content typography ────────────────────────────── */
+.content h1 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+.lead { color: var(--text); }
+.lead .accent { color: var(--blue); }
+
+/* rule header: ─[ label ]──────── //─ */
+.content h2.rule {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2.25rem 0 0.85rem;
+  white-space: nowrap;
+}
+.content h2.rule .b { color: var(--blue); white-space: pre; }
+.content h2.rule .ln {
+  flex: 1 1 auto;
+  border-top: 1px solid var(--border-bright);
+  margin: 0 0.6ch;
+  align-self: center;
+  height: 0;
+}
+
+.content h3 {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ─── Key/value block ───────────────────────────────── */
+.kv {
+  color: var(--muted);
+  background: none;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 0.25rem 0 1rem;
+}
+.kv .k { color: var(--dim); }
+
+/* ─── Dot-leader index ──────────────────────────────── */
+.idx { margin: 0.5rem 0 1rem; }
+.idx-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8ch;
+  padding: 0.18rem 0;
+}
+.idx-item .n { color: var(--dim); }
+.idx-item .t { color: var(--blue); white-space: nowrap; }
+.idx-item:hover .t { color: var(--blue-bright); text-decoration: underline; }
+.idx-item .dots {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted var(--border-bright);
+  transform: translateY(-0.28em);
+  margin: 0 0.4ch;
+}
+.idx-item .m { color: var(--muted); white-space: nowrap; font-size: 0.82rem; }
+
+/* ─── Callout (>>) ──────────────────────────────────── */
+.callout { color: var(--muted); }
+.callout .mk { color: var(--yellow); }
+
+/* ─── Pills ─────────────────────────────────────────── */
+.pillrow { display: flex; flex-wrap: wrap; gap: 0.6ch 1ch; margin: 0.75rem 0 1rem; }
+.pill {
+  color: var(--text);
+  border: 1px solid var(--border-bright);
+  padding: 0.05rem 0.7ch;
+  font-size: 0.8rem;
+}
+
+/* ─── Inline code / blocks ──────────────────────────── */
+code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--code-bg);
+  color: var(--orange);
+  padding: 0.1em 0.4em;
+  border: 1px solid var(--border);
+}
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  margin-bottom: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+pre code { background: none; border: none; padding: 0; color: var(--text); }
+
+/* ─── Statusline ────────────────────────────────────── */
+.statusline {
+  margin-top: 2.5rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.statusline .sep { color: var(--dim); }
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 600px) {
+  .doc { padding: 1.25rem 1rem 2.5rem; }
+  .content h2.rule { font-size: 0.88rem; }
+}
