@@ -14,13 +14,17 @@ or built for authorized practice — no client, production, or proprietary mater
 
 {% include rule.html label="ai + offense" %}
 
-<h3>agentic offensive security</h3>
+<h3>agentic offensive security — the ai-offsec stack</h3>
 <p>
 Building and directing AI agent systems that assist offensive work under
 operator control — automating repetitive, low-risk steps and routing heavy or
 high-risk work to human review. The operating edge: orchestrating and judging
-AI for offensive tasks rather than running every tool by hand.
+AI for offensive tasks rather than running every tool by hand. It is a real,
+public, three-repo stack that drives a full authorized engagement:
 </p>
+<pre class="kv"><span class="k">dagar-red  </span> att&amp;ck-mapped adversary-emulation skills — decides the next call, when to stop
+<span class="k">p0rtix     </span> recon / enum over MCP — facts + the green→yellow→red noise floor
+<span class="k">sliver-mcp </span> sliver c2 mcp server — listeners, implants, sessions/beacons, execution</pre>
 
 <h3>AI red teaming &amp; model evaluation</h3>
 <p>
@@ -40,19 +44,45 @@ them — to surface and weaponize failure modes.
 {% include rule.html label="public work" %}
 
 <div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/dagar-red">
+    <span class="t">dagar-red</span><span class="dots"></span><span class="m">att&ck emulation skills</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
+    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon / enum mcp</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
+    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">sliver c2 mcp server</span>
+  </a>
   <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
     <span class="t">lab-writeups</span><span class="dots"></span><span class="m">htb · pg · thm</span>
   </a>
   <a class="idx-item" href="https://v0idravl.github.io/hakiki">
     <span class="t">hakiki</span><span class="dots"></span><span class="m">offensive reference</span>
   </a>
-  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
-    <span class="t">p0rtix</span><span class="dots"></span><span class="m">python recon / enum</span>
-  </a>
   <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
     <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">linux triage</span>
   </a>
 </div>
+
+<h3>dagar-red</h3>
+<p>
+An ATT&amp;CK-aligned adversary-emulation skill system for Claude Code — 76
+technique skills across the full kill chain, each carrying its detection cost and
+a validation gate. The judgment layer that turns AI into a disciplined red-team
+operator: it decides which tool call to make next, at which noise tier, and when
+to stop. <code>/emulate</code> compiles a named actor into an ATT&amp;CK-mapped plan;
+<code>/innovate</code> synthesizes novel tradecraft when the catalogue runs out.
+Every engagement's deliverable is improved defense.
+</p>
+
+<h3>sliver-mcp</h3>
+<p>
+A Model Context Protocol server for the Sliver C2 framework — exposes the operator
+surface (listeners, implant/beacon generation, sessions/beacons, execution, file
+ops, structured handoff) as tools an AI agent can drive, with a passive→green→
+yellow→red noise gate. Built for adversary emulation: standing up realistic C2 so
+defenders can test detection and response.
+</p>
 
 <h3>lab-writeups</h3>
 <p>
