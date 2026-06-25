@@ -102,10 +102,15 @@ points that keep assessment work consistent.
 
 <h3>p0rtix</h3>
 <p>
-Scope-aware Python recon and enumeration: port discovery, service classification,
-web fingerprinting, directory/vhost enumeration, and — in authorized AD labs —
-credentialed SMB/LDAP enumeration, Kerberoasting, AS-REP roasting, BloodHound
-collection, and ADCS review, with evidence preserved as raw command logs.
+An MCP-first, scope-aware recon and enumeration framework — primarily driven by an AI
+agent over MCP, and equally runnable standalone (interactive TUI or headless CLI). It
+bootstraps the engagement (workspace, evidence layout, user lists), then runs port
+discovery, service classification, web fingerprinting, directory/vhost enumeration, and
+— in authorized AD labs — credentialed SMB/LDAP enumeration, Kerberoasting, AS-REP
+roasting, BloodHound collection, and ADCS review, with evidence preserved as raw command
+logs. It owns the recon→initial-access leg: enumerate and test access, then hand a
+structured <code>export_handoff</code> to the exploitation (Metasploit) and C2
+(sliver-mcp) agents — recon, not C2; it never opens an interactive shell.
 </p>
 
 <h3>traxerax-lite</h3>
