@@ -16,15 +16,15 @@ or built for authorized practice — no client, production, or proprietary mater
 
 <h3>agentic offensive security — the ai-offsec stack</h3>
 <p>
-Building and directing AI agent systems that assist offensive work under
+Orchestrating and judging agent systems that assist offensive work under
 operator control — automating repetitive, low-risk steps and routing heavy or
-high-risk work to human review. The operating edge: orchestrating and judging
-AI for offensive tasks rather than running every tool by hand. It is a real,
-public, three-repo stack that drives a full authorized engagement:
+high-risk work to human review. The operating edge is directing and verifying
+the work rather than running every tool by hand. A layered, public, three-repo
+stack that drives a full authorized engagement:
 </p>
-<pre class="kv"><span class="k">dagar-red  </span> att&amp;ck-mapped adversary-emulation skills — decides the next call, when to stop
-<span class="k">p0rtix     </span> recon / enum over MCP — facts + the green→yellow→red noise floor
-<span class="k">sliver-mcp </span> sliver c2 mcp server — listeners, implants, sessions/beacons, execution</pre>
+<pre class="kv"><span class="k">dagar-red  </span> judgment layer — att&amp;ck adversary-emulation skills: which call next, when to stop
+<span class="k">p0rtix     </span> tool surface — recon / enum over mcp: facts + the green→yellow→red noise floor
+<span class="k">sliver-mcp </span> tool surface — sliver c2 over mcp: listeners, implants, sessions/beacons, execution</pre>
 
 <h3>AI red teaming &amp; model evaluation</h3>
 <p>
@@ -68,8 +68,8 @@ them — to surface and weaponize failure modes.
 <p>
 An ATT&amp;CK-aligned adversary-emulation skill system for Claude Code — 76
 technique skills across the full kill chain, each carrying its detection cost and
-a validation gate. The judgment layer that turns AI into a disciplined red-team
-operator: it decides which tool call to make next, at which noise tier, and when
+a validation gate. The judgment layer that turns a general agent into a
+disciplined red-team operator: it decides which tool call to make next, at which noise tier, and when
 to stop. <code>/emulate</code> compiles a named actor into an ATT&amp;CK-mapped plan;
 <code>/innovate</code> synthesizes novel tradecraft when the catalogue runs out.
 Every engagement's deliverable is improved defense.
