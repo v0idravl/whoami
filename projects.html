@@ -19,11 +19,13 @@ or built for authorized practice — no client, production, or proprietary mater
 Orchestrating and judging agent systems that assist offensive work under
 operator control — automating repetitive, low-risk steps and routing heavy or
 high-risk work to human review. The operating edge is directing and verifying
-the work rather than running every tool by hand. A layered, public, three-repo
-stack that drives a full authorized engagement:
+the work rather than running every tool by hand. A layered stack — recon,
+exploitation, and C2 over MCP, judged by an adversary-emulation skill layer —
+that drives a full authorized engagement:
 </p>
-<pre class="kv"><span class="k">dagar-red  </span> judgment layer — att&amp;ck adversary-emulation skills: which call next, when to stop
+<pre class="kv"><span class="k">dagar-red  </span> judgment layer — att&amp;ck adversary-emulation skills: which call next, when to stop (private · access on request)
 <span class="k">p0rtix     </span> tool surface — recon / enum over mcp: facts + the green→yellow→red noise floor
+<span class="k">metasploit </span> tool surface — exploitation over the metasploit mcp: exploits, sessions, post, pivot
 <span class="k">sliver-mcp </span> tool surface — sliver c2 over mcp: listeners, implants, sessions/beacons, execution</pre>
 
 <h3>AI red teaming &amp; model evaluation</h3>
@@ -44,8 +46,8 @@ them — to surface and weaponize failure modes.
 {% include rule.html label="public work" %}
 
 <div class="idx">
-  <a class="idx-item" href="https://github.com/v0idravl/dagar-red">
-    <span class="t">dagar-red</span><span class="dots"></span><span class="m">att&ck emulation skills</span>
+  <a class="idx-item" href="{{ '/contact.html' | relative_url }}">
+    <span class="t">dagar-red</span><span class="dots"></span><span class="m">private · access on request</span>
   </a>
   <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
     <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon / enum mcp</span>
@@ -64,7 +66,7 @@ them — to surface and weaponize failure modes.
   </a>
 </div>
 
-<h3>dagar-red</h3>
+<h3>dagar-red <span class="muted">· private · source access on request</span></h3>
 <p>
 An ATT&amp;CK-aligned adversary-emulation skill system for Claude Code — 76
 technique skills across the full kill chain, each carrying its detection cost and
