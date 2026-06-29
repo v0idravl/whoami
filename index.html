@@ -21,7 +21,7 @@ red team and model-evaluation work.
 <pre class="kv"><span class="k">target    </span> remote ai red team &amp; model evaluation · vulnerability research · offensive work
 <span class="k">location  </span> san diego, ca
 <span class="k">platforms </span> pwn.college · hackthebox · offsec proving grounds
-<span class="k">proof     </span> dagar-red · p0rtix · sliver-mcp · lab-writeups · hakiki · traxerax-lite</pre>
+<span class="k">proof     </span> dagar-red · p0rtix · p0cs · sliver-mcp · dagar-state · lab-writeups · hakiki · traxerax-lite</pre>
 
 {% include rule.html label="focus" %}
 
@@ -47,8 +47,10 @@ owning every decision. It is a layered stack. A judgment layer decides the next
 move — <b>dagar-red</b>, an ATT&amp;CK-mapped adversary-emulation skill system
 (private — source access on request). A tool surface does the work over MCP —
 <a href="https://github.com/v0idravl/p0rtix">p0rtix</a> (recon→initial-access),
-the Metasploit MCP (exploitation), and
-<a href="https://github.com/v0idravl/sliver-mcp">sliver-mcp</a> (Sliver C2). The
+<a href="https://github.com/v0idravl/p0cs">p0cs</a> (exploit staging with Sliver cradle injection), and
+<a href="https://github.com/v0idravl/sliver-mcp">sliver-mcp</a> (Sliver C2 — sessions, beacons, SOCKS tunneling, post-ex).
+Engagement state flows through <a href="https://github.com/v0idravl/dagar-state">dagar-state</a>,
+a shared SQLite store both tools write to. The
 skills hold the method and make the decisions; the tools execute; the operator
 authorizes and verifies every call.
 </p>
@@ -72,7 +74,8 @@ enumeration so the operator moves faster and documents better.
 <pre class="kv"><span class="k">ai red team  </span> llm &amp; application red teaming · model evaluation
 <span class="k">             </span> prompt injection / jailbreak · agent &amp; tool abuse · adversarial eval
 <span class="k">offensive    </span> vulnerability research · active directory &amp; internal networks
-<span class="k">work         </span> reverse engineering · binary exploitation · offensive tooling · python / c</pre>
+<span class="k">work         </span> reverse engineering · binary exploitation · offensive tooling · python / c
+<span class="k">agentic      </span> p0rtix · p0cs · sliver-mcp · dagar-state · dagar-red</pre>
 
 {% include rule.html label="evidence" %}
 
