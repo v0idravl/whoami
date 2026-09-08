@@ -1,0 +1,225 @@
+---
+layout: default
+title: "evidence // v0idravl"
+description: "Selected evidence: offline-first terminal tools, host defense, case-work tooling, and documentation rigor — what is built and where to verify it."
+nav: projects
+---
+
+<h1>selected evidence</h1>
+<p>
+What is built, what it demonstrates, and where to verify it. Everything here
+is lab-based, personal-infrastructure-based, or built for authorized
+practice — no client, production, or proprietary material. Opinions and
+projects are my own, unrelated to any employer's systems, data, or casework.
+</p>
+
+{% include rule.html label="terminal tools" %}
+
+<p>
+Small, offline-first terminal software — stdlib-only, single-file where
+possible, with offline test suites. The shared bar: no network on the read
+path, and code a single person can audit in an evening.
+</p>
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/shinbun">
+    <span class="t">shinbun</span><span class="dots"></span><span class="m">daily news over tor</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sdwx">
+    <span class="t">sdwx</span><span class="dots"></span><span class="m">80-col weather, zero deps</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/yomu">
+    <span class="t">yomu</span><span class="dots"></span><span class="m">terminal epub reader</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sokudoku">
+    <span class="t">sokudoku</span><span class="dots"></span><span class="m">rsvp speed reader</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/tidepool">
+    <span class="t">tidepool</span><span class="dots"></span><span class="m">binaural player, one file</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/dotfiles-public">
+    <span class="t">dotfiles-public</span><span class="dots"></span><span class="m">minimal wayland desktop</span>
+  </a>
+</div>
+
+<h3>shinbun</h3>
+<p>
+The daily newspaper as one dated 80-column plaintext file: pulled over tor
+each morning by a jittered timer, read back offline with zero network on
+the read path, and yesterday's file is the archive. The whole program is
+one stdlib-only file — hand-rolled SOCKS5 client with remote DNS, minimal
+HTTP/1.1 reader, blend-in user agent, exactly four GETs per edition — with
+a fail-closed mode for unattended pulls. The offline-first creed, end to
+end, in a single auditable file.
+</p>
+
+<h3>sdwx</h3>
+<p>
+Weather, surf, tides, sun/moon, and space weather in one 80-column report —
+stdlib-only Python, keyless APIs, per-source caching with stale-if-offline
+fallback, and graceful per-section degradation. Built for a tmux pane or a
+shell login hook; the test suite never touches the network.
+</p>
+
+<h3>yomu + sokudoku</h3>
+<p>
+A ~450-line, standard-library-only EPUB reader for the terminal — parsed by
+hand from zip to spine, with the comments teaching the format as they go;
+the reader is also the documentation. <b>sokudoku</b> is its flashing-word
+counterpart: an rsvp speed reader whose pacing follows the reading
+research rather than the app marketing — sentence-boundary-aware flashes,
+rewind-to-sentence-start on resume, honest about regression. No network,
+ever.
+</p>
+
+<h3>tidepool</h3>
+<p>
+A live binaural-beat player in one file: named modes instead of raw
+frequencies, vim keys, phase-continuous synthesis with click-free mode
+switches — and honest sourcing, flagging where the entrainment evidence is
+weak instead of selling wellness.
+</p>
+
+<h3>dotfiles-public</h3>
+<p>
+A minimal, plaintext-forward Debian/Wayland desktop starter — sway, waybar,
+fuzzel, and a live theme system. Deliberately small: no installer, nothing
+needs sudo, and nothing touches the system outside $HOME.
+</p>
+
+{% include rule.html label="case-work tooling" %}
+
+<p>
+Tooling for case work: software that makes documentation rigorous instead of
+software that cuts corners. All four are public — stdlib-only Python 3.11+,
+offline-first, and read-only on evidence.
+</p>
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
+    <span class="t">chr0nix</span><span class="dots"></span><span class="m">utc exhibit timelines</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/cust0dia">
+    <span class="t">cust0dia</span><span class="dots"></span><span class="m">hash manifests + custody</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/h4ndl3">
+    <span class="t">h4ndl3</span><span class="dots"></span><span class="m">offline id research</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/m3talex">
+    <span class="t">m3talex</span><span class="dots"></span><span class="m">image metadata flags</span>
+  </a>
+</div>
+
+<h3>chr0nix</h3>
+<p>
+Normalizes incident exports into UTC-ordered, hash-manifested exhibit indexes —
+one defensible timeline instead of scattered logs and notes.
+</p>
+
+<h3>cust0dia</h3>
+<p>
+Recursive SHA-256 exhibit manifests with chain-of-custody log generation —
+every artifact hashed, every handoff recorded.
+</p>
+
+<h3>h4ndl3</h3>
+<p>
+Offline-first identifier research worksheets with validated,
+corroboration-tracked findings — lawful, documented open-source research by
+default.
+</p>
+
+<h3>m3talex</h3>
+<p>
+Image metadata extraction and synthetic-media indicator flagging — what a file
+says about itself, and when that story doesn't add up.
+</p>
+
+{% include rule.html label="public work" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
+    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
+    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
+    <span class="t">hakiki</span><span class="dots"></span><span class="m">technical reference</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
+    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
+    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0cs">
+    <span class="t">p0cs</span><span class="dots"></span><span class="m">uniform poc runner</span>
+  </a>
+</div>
+
+<h3>traxerax-lite</h3>
+<p>
+Self-contained Linux host defense and audit: multi-source log correlation,
+live host telemetry, configuration and hardening audits, file integrity
+monitoring, and cross-run change detection — plus an optional eBPF kernel
+probe that surfaces rootkit and compromise indicators. Behavioral detection,
+no signatures, no network calls: host state turned into a structured account
+of what changed and what actually matters.
+</p>
+
+<h3>lab-writeups</h3>
+<p>
+70+ documented offensive-security lab engagements (hackthebox, proving
+grounds, tryhackme), redacted for public release. Fourteen Active
+Directory boxes running full kill chains — null-session enumeration to
+AS-REP roasting to DCSync, Kerberoasting, ADCS and ACL abuse, BloodHound
+path reasoning, password spraying under lockout constraints — plus ~50
+Linux and 10 Windows targets covering web exploitation, LFI-to-upload
+chains, and SUID/GTFOBins privilege escalation. Every writeup closes with
+root cause, impact, remediation, and detection opportunities: offense
+written to inform defense, and every claim traceable to a command, a log,
+or a screenshot.
+</p>
+
+<h3>hakiki</h3>
+<p>
+A command-first offensive quick reference distilled from repeated lab work —
+29 pages across recon, web exploitation, credentials, exploit dev,
+reversing, privesc, Active Directory, and post-exploitation. The AD page
+runs the full kill chain with exact invocations; noisy techniques carry an
+explicit PT-only tag. Commands and decision points that keep analysis
+consistent instead of improvised. Authorized use only.
+</p>
+
+<h3>p0rtix</h3>
+<p>
+A scope-aware enumeration framework, runnable standalone (interactive TUI or
+headless CLI) or over MCP, with evidence preserved as raw command logs — the
+discipline of scoped, authorized work where every action is logged and
+exportable.
+</p>
+
+<h3>sliver-mcp + p0cs</h3>
+<p>
+The rest of the ai-offsec stack: <b>sliver-mcp</b> exposes the sliver c2
+operator surface — listeners, implant generation, sessions, command
+execution — as MCP tools an ai agent can drive behind an explicit safety
+gate, and <b>p0cs</b> is a uniform runner for proof-of-concept exploits and
+offensive helpers, stdlib-only, with no hardcoded targets and a runner that
+refuses to launch without them. Adversary emulation for defenders, with
+authorized-use gating throughout.
+</p>
+
+{% include rule.html label="profiles" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl">
+    <span class="t">github.com/v0idravl</span><span class="dots"></span><span class="m">repositories</span>
+  </a>
+  <a class="idx-item" href="https://app.hackthebox.com/profile/v0idravl">
+    <span class="t">hackthebox / v0idravl</span><span class="dots"></span><span class="m">lab history</span>
+  </a>
+</div>
+
+<p class="callout"><span class="mk">&gt;&gt;</span> public content is sanitized and limited to lab or authorized environments.</p>

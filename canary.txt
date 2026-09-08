@@ -1,0 +1,12 @@
+warrant canary — v0idravl
+as of 2026-09-06:
+
+- no national security letters received
+- no gag orders received
+- no warrants served
+- no data surrendered to anyone, for any reason
+- the dog remains uncompelled to testify
+
+this canary is re-armed monthly and signed with the pgp key published
+alongside it (pubkey.asc). if it ever goes stale, treat the silence as
+the statement — and ask about it over encrypted mail, not plain.
