@@ -11,14 +11,11 @@ hold up</span> — with people, with systems, and with code.
 </p>
 
 <p>
-The skill is behavioral and it transfers: rapid, behavior-based assessment
-honed over ~6 years of security fieldwork (overt/covert, cctv, plainclothes,
-armored), a year of rural 911 ems, 70+ offensive lab engagements, and a
+~6 years of security fieldwork — overt/covert, cctv, plainclothes,
+armored — a year of rural 911 ems, 70+ offensive lab engagements, and a
 behavioral host-defense tool with a handwritten ebpf probe. Every side of
-an incident — responded to as an emt, watched through a camera wall,
-tailed in plainclothes, documented for court, replayed in a lab. The way
-I work is the other half of the offer: offline-first, stdlib-only tools
-you can audit in an evening, and documentation that makes evidence hold.
+an incident: responded to as an emt, watched through a camera wall,
+tailed in plainclothes, documented for court, replayed in a lab.
 <span class="accent">low-resource, high-capability</span> — the read path
 never needs a network, and neither do I.
 </p>
@@ -26,29 +23,26 @@ never needs a network, and neither do I.
 {% include rule.html label="terminal software" %}
 
 <p>
-Python (stdlib-first), bash, some C — single-file tools with offline test
-suites and documentation meant to be read, not just rendered.
-<b>shinbun</b> is the daily newspaper as one dated 80-column file, pulled
-over tor each morning and read fully offline — hand-rolled SOCKS5 and
-HTTP, a blend-in user agent, and a fail-closed mode for unattended pulls.
-<b>sdwx</b> packs weather, surf, tides, sun/moon, and space weather into one
-80-col report with no API keys and a stale-cache fallback when the network
-is gone. <b>yomu</b> is a ~450-line EPUB reader whose comments teach the
-format as they go, and <b>sokudoku</b> is its flashing-word counterpart —
-an rsvp speed reader whose pacing follows the reading research rather
-than the app marketing. <b>tidepool</b> is a binaural-beat
-player with named modes, vim keys, and phase-continuous synthesis, honest
-about what the science does and doesn't support.
+Python (stdlib-first), bash, some C — single-file tools with offline
+test suites. <b>shinbun</b> is the daily newspaper as one dated
+80-column file, pulled over tor each morning and read fully offline —
+hand-rolled SOCKS5 and HTTP, blend-in user agent, fail-closed unattended
+pulls. <b>sdwx</b> packs weather, surf, tides, sun/moon, and space
+weather into one 80-col report with no API keys and a stale-cache
+offline fallback. <b>yomu</b> is a ~450-line EPUB reader whose comments
+teach the format; <b>sokudoku</b> is its flashing-word counterpart, an
+rsvp speed reader whose pacing follows the reading research.
+<b>tidepool</b> is a binaural-beat player with named modes, vim keys,
+and phase-continuous synthesis.
 </p>
 
 {% include rule.html label="systems &amp; host defense" %}
 
 <p>
 Linux internals, x86 assembly, eBPF, bubblewrap sandboxing, kernel
-hardening — prefers understanding systems below the api layer.
-<b>traxerax-lite</b> is behavioral Linux host defense and audit: anomaly-based,
-no signatures, no network calls, with a handwritten eBPF probe and candid
-known-limitations.
+hardening — below the api layer. <b>traxerax-lite</b> is behavioral
+Linux host defense and audit: anomaly-based, no signatures, no network
+calls, handwritten eBPF probe, candid known-limitations.
 </p>
 
 {% include rule.html label="offensive security" %}
@@ -59,34 +53,32 @@ redacted for public release. Active Directory end to end — AS-REP roasting,
 Kerberoasting, DCSync, ADCS and ACL abuse, BloodHound path reasoning,
 password spraying under lockout constraints — plus web exploitation,
 Linux and Windows privilege escalation, and exploit-dev / reversing
-fundamentals. Authorized labs only; the writeups are the discipline.
-Every engagement closes with root cause, impact, remediation, and
-detection opportunities, because offense that can't inform defense is
-just trivia. <b>lab-writeups</b> carries the evidence; <b>hakiki</b> is the
-command-first field reference distilled from the same reps. The methodology
-also ships as tooling: an ai-offsec stack of MCP servers — <b>p0rtix</b>
-(scope-aware recon), <b>sliver-mcp</b> (the sliver c2 operator surface,
-agent-drivable), and <b>p0cs</b> (one uniform poc runner) — that lets an ai
-agent drive the kill chain under explicit safety gates. Authorized use
-only, everywhere.
+fundamentals. Every engagement closes with root cause, impact,
+remediation, and detection opportunities. <b>lab-writeups</b> carries the
+evidence; <b>hakiki</b> is the command-first field reference distilled
+from the same reps. The ai-offsec stack — <b>p0rtix</b> (scope-aware
+recon) and <b>sliver-mcp</b> (the sliver c2 operator surface,
+agent-drivable) — lets an ai agent drive the kill chain under explicit
+safety gates. Authorized labs only.
 </p>
 
 {% include rule.html label="investigations · osint · surveillance" %}
 
 <p>
-~6 years of contract security — physical, overt, covert, cctv / video
+Contract security across physical, overt, covert, and cctv / video
 surveillance; hands-on to hands-off, armed to unarmed, uniformed to
 plainclothes, armored / cash-in-transit — and one year as a 911-response
-emt in a rural, low-resource system. Open-source research runs on a two-source corroboration standard:
-nothing single-source goes in a report, and <b>h4ndl3</b> automates the
-habit. Rapid behavioral assessment is the field skill underneath it all —
-behavior-based, never appearance-based: pre-incident indicators read in
-seconds, de-escalation first, hands-on only when unavoidable, on armed
-and unarmed posts alike. The same evidence discipline in software:
-<b>cust0dia</b> (recursive SHA-256 exhibit manifests with chain-of-custody
-logs), <b>chr0nix</b> (UTC-ordered, hash-manifested exhibit timelines), and
-<b>m3talex</b> (image metadata and synthetic-media flagging). Case building
-where every exhibit is traceable.
+emt in a rural, low-resource system. Open-source research runs on a
+two-source corroboration standard: nothing single-source goes in a
+report. Rapid behavioral assessment — behavior-based, never
+appearance-based: pre-incident indicators read in seconds, de-escalation
+first, hands-on only when unavoidable. The same evidence discipline in
+software: <b>chr0nix</b>, the investigative-documentation suite — hash
+manifests and chain of custody, utc exhibit timelines,
+corroboration-gated identifier research, image metadata and
+synthetic-media flagging, case management — orchestrated from one
+console behind risk-tiered attestation. Case building where every
+exhibit is traceable.
 </p>
 
 {% include rule.html label="evidence" %}
@@ -114,25 +106,13 @@ where every exhibit is traceable.
     <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
   </a>
   <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
-    <span class="t">chr0nix</span><span class="dots"></span><span class="m">utc exhibit timelines</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/cust0dia">
-    <span class="t">cust0dia</span><span class="dots"></span><span class="m">hash manifests + custody</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/h4ndl3">
-    <span class="t">h4ndl3</span><span class="dots"></span><span class="m">offline id research</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/m3talex">
-    <span class="t">m3talex</span><span class="dots"></span><span class="m">image metadata flags</span>
+    <span class="t">chr0nix</span><span class="dots"></span><span class="m">investigative-doc suite</span>
   </a>
   <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
     <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
   </a>
   <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
     <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/p0cs">
-    <span class="t">p0cs</span><span class="dots"></span><span class="m">uniform poc runner</span>
   </a>
   <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
     <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
