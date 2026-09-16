@@ -1,48 +1,24 @@
 ---
 layout: default
 title: "v0idravl // whoami"
-description: "v0idravl — finds what doesn't belong and proves it: behavioral detection across people, systems, and code. Every side of an incident."
+description: "v0idravl — offensive security practitioner and independent researcher: darknet and anonymity-network research, custody-grade evidence discipline, terminal-first tooling."
 nav: home
 ---
 
 <p class="lead">
-I find what doesn't belong, I prove it, and I <span class="accent">make it
-hold up</span> — with people, with systems, and with code.
+Offensive security practitioner and independent researcher — I find what
+doesn't belong, I prove it, and I <span class="accent">make it hold
+up</span>.
 </p>
 
 <p>
-~6 years of security fieldwork — overt/covert, cctv, plainclothes,
-armored — a year of rural 911 ems, 70+ offensive lab engagements, and a
-behavioral host-defense tool with a handwritten ebpf probe. Every side of
-an incident: responded to as an emt, watched through a camera wall,
-tailed in plainclothes, documented for court, replayed in a lab.
-<span class="accent">low-resource, high-capability</span> — the read path
-never needs a network, and neither do I.
-</p>
-
-{% include rule.html label="terminal software" %}
-
-<p>
-Python (stdlib-first), bash, some C — single-file tools with offline
-test suites. <b>shinbun</b> is the daily newspaper as one dated
-80-column file, pulled over tor each morning and read fully offline —
-hand-rolled SOCKS5 and HTTP, blend-in user agent, fail-closed unattended
-pulls. <b>sdwx</b> packs weather, surf, tides, sun/moon, and space
-weather into one 80-col report with no API keys and a stale-cache
-offline fallback. <b>yomu</b> is a ~450-line EPUB reader whose comments
-teach the format; <b>sokudoku</b> is its flashing-word counterpart, an
-rsvp speed reader whose pacing follows the reading research.
-<b>tidepool</b> is a binaural-beat player with named modes, vim keys,
-and phase-continuous synthesis.
-</p>
-
-{% include rule.html label="systems &amp; host defense" %}
-
-<p>
-Linux internals, x86 assembly, eBPF, bubblewrap sandboxing, kernel
-hardening — below the api layer. <b>traxerax-lite</b> is behavioral
-Linux host defense and audit: anomaly-based, no signatures, no network
-calls, handwritten eBPF probe, candid known-limitations.
+70+ documented engagements across Active Directory, exploitation, and
+privilege escalation; darknet and anonymity-network research under a
+two-source corroboration standard; custody-grade evidence discipline.
+~6 years of covert/overt security fieldwork — plainclothes, cctv,
+armored — and a year of rural 911 ems. Remote-first. 100% travel when it
+matters. <span class="accent">low-resource, high-capability</span> — the
+read path never needs a network, and neither do I.
 </p>
 
 {% include rule.html label="offensive security" %}
@@ -56,10 +32,23 @@ Linux and Windows privilege escalation, and exploit-dev / reversing
 fundamentals. Every engagement closes with root cause, impact,
 remediation, and detection opportunities. <b>lab-writeups</b> carries the
 evidence; <b>hakiki</b> is the command-first field reference distilled
-from the same reps. The ai-offsec stack — <b>p0rtix</b> (scope-aware
-recon) and <b>sliver-mcp</b> (the sliver c2 operator surface,
-agent-drivable) — lets an ai agent drive the kill chain under explicit
-safety gates. Authorized labs only.
+from the same reps. The methodology ships as tooling: the ai-offsec
+stack — <b>p0rtix</b> (scope-aware recon) and <b>sliver-mcp</b> (the
+sliver c2 operator surface, agent-drivable) — lets an ai agent drive the
+kill chain under explicit safety gates. Authorized labs only.
+</p>
+
+{% include rule.html label="darknet research" %}
+
+<p>
+Tor / I2P / DNM ecosystem research — vendor and marketplace profiling,
+cross-platform identity resolution, opsec failure analysis: where
+attribution succeeds and where investigations break. Data analysis and
+crypto tracing — on-chain analysis, address clustering,
+relationship-graph construction, python-driven timeline and link
+correlation across sources. Published analyses at
+<a href="https://v0idravl.github.io">v0idravl.github.io</a> — signed,
+timestamped, two-source corroboration standard.
 </p>
 
 {% include rule.html label="investigations · osint · surveillance" %}
@@ -81,9 +70,55 @@ console behind risk-tiered attestation. Case building where every
 exhibit is traceable.
 </p>
 
+{% include rule.html label="systems &amp; host defense" %}
+
+<p>
+Linux internals, x86 assembly, eBPF, bubblewrap sandboxing, kernel
+hardening — below the api layer. <b>traxerax-lite</b> is behavioral
+Linux host defense and audit: anomaly-based, no signatures, no network
+calls, handwritten eBPF probe, candid known-limitations.
+</p>
+
+{% include rule.html label="terminal software" %}
+
+<p>
+Python (stdlib-first), bash, some C — single-file tools with offline
+test suites. <b>shinbun</b> is the daily newspaper as one dated
+80-column file, pulled over tor each morning and read fully offline —
+hand-rolled SOCKS5 and HTTP, blend-in user agent, fail-closed unattended
+pulls. <b>sdwx</b> packs weather, surf, tides, sun/moon, and space
+weather into one 80-col report with no API keys and a stale-cache
+offline fallback. <b>yomu</b> is a ~450-line EPUB reader whose comments
+teach the format; <b>sokudoku</b> is its flashing-word counterpart, an
+rsvp speed reader whose pacing follows the reading research.
+<b>tidepool</b> is a binaural-beat player with named modes, vim keys,
+and phase-continuous synthesis.
+</p>
+
 {% include rule.html label="evidence" %}
 
 <div class="idx">
+  <a class="idx-item" href="https://v0idravl.github.io">
+    <span class="t">v0idravl.github.io</span><span class="dots"></span><span class="m">published dnm analyses</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
+    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
+    <span class="t">hakiki</span><span class="dots"></span><span class="m">technical reference</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
+    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
+    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
+    <span class="t">chr0nix</span><span class="dots"></span><span class="m">investigative-doc suite</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
+    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
+  </a>
   <a class="idx-item" href="https://github.com/v0idravl/shinbun">
     <span class="t">shinbun</span><span class="dots"></span><span class="m">daily news over tor</span>
   </a>
@@ -101,24 +136,6 @@ exhibit is traceable.
   </a>
   <a class="idx-item" href="https://github.com/v0idravl/dotfiles-public">
     <span class="t">dotfiles-public</span><span class="dots"></span><span class="m">minimal wayland desktop</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
-    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
-    <span class="t">chr0nix</span><span class="dots"></span><span class="m">investigative-doc suite</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
-    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
-    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
-  </a>
-  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
-    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
-  </a>
-  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
-    <span class="t">hakiki</span><span class="dots"></span><span class="m">technical reference</span>
   </a>
 </div>
 <p class="callout"><span class="mk">&gt;&gt;</span> full evidence on <a href="{{ '/projects.html' | relative_url }}">~evidence</a>.</p>

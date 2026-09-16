@@ -13,8 +13,9 @@
 ![deploy](https://img.shields.io/badge/deploy-github%20pages-222222?logo=github&logoColor=white)
 
 Source for **[v0idravl.github.io/whoami](https://v0idravl.github.io/whoami)** —
-v0idravl's persona site: asset protection professional building toward
-investigations. Jekyll, deployed via GitHub Pages.
+v0idravl's persona site: offensive security practitioner and independent
+researcher — darknet and anonymity-network research, custody-grade evidence
+discipline, terminal-first tooling. Jekyll, deployed via GitHub Pages.
 
 ---
 
