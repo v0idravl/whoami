@@ -13,6 +13,120 @@ practice — no client, production, or proprietary material. Opinions and
 projects are my own, unrelated to any employer's systems, data, or casework.
 </p>
 
+{% include rule.html label="public work" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
+    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
+    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
+  </a>
+  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
+    <span class="t">hakiki</span><span class="dots"></span><span class="m">technical reference</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
+    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
+  </a>
+  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
+    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
+  </a>
+</div>
+
+<h3>traxerax-lite</h3>
+<p>
+Self-contained Linux host defense and audit: multi-source log correlation,
+live host telemetry, configuration and hardening audits, file integrity
+monitoring, and cross-run change detection — plus an optional eBPF kernel
+probe that surfaces rootkit and compromise indicators. Behavioral detection,
+no signatures, no network calls: host state turned into a structured account
+of what changed and what actually matters.
+</p>
+
+<h3>lab-writeups</h3>
+<p>
+70+ documented offensive-security lab engagements (hackthebox, proving
+grounds, tryhackme), redacted for public release. Fourteen Active
+Directory boxes running full kill chains — null-session enumeration to
+AS-REP roasting to DCSync, Kerberoasting, ADCS and ACL abuse, BloodHound
+path reasoning, password spraying under lockout constraints — plus ~50
+Linux and 10 Windows targets covering web exploitation, LFI-to-upload
+chains, and SUID/GTFOBins privilege escalation. Every writeup closes with
+root cause, impact, remediation, and detection opportunities — every claim
+traceable to a command, a log, or a screenshot.
+</p>
+
+<h3>hakiki</h3>
+<p>
+A command-first offensive quick reference distilled from repeated lab work —
+29 pages across recon, web exploitation, credentials, exploit dev,
+reversing, privesc, Active Directory, and post-exploitation. The AD page
+runs the full kill chain with exact invocations; noisy techniques carry an
+explicit PT-only tag. Authorized use only.
+</p>
+
+<h3>p0rtix</h3>
+<p>
+A scope-aware enumeration framework, runnable standalone (interactive TUI or
+headless CLI) or over MCP, with evidence preserved as raw command logs —
+every action logged and exportable.
+</p>
+
+<h3>sliver-mcp</h3>
+<p>
+The sliver c2 (command & control) operator surface — listeners, implant 
+generation, sessions, command execution — exposed as MCP tools an ai agent can 
+drive behind an explicit safety gate. Adversary emulation for defenders; 
+authorized use only.
+</p>
+
+{% include rule.html label="case-work tooling" %}
+
+<p>
+One repository, one security model: stdlib-only Python 3.11+, offline-first,
+read-only on evidence. The standalone cust0dia / h4ndl3 / m3talex repos are
+superseded by the monorepo.
+</p>
+
+<div class="idx">
+  <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
+    <span class="t">chr0nix</span><span class="dots"></span><span class="m">investigative-doc suite</span>
+  </a>
+</div>
+
+<h3>chr0nix</h3>
+<p>
+The consolidated investigative-documentation suite: SHA-256 exhibit
+manifests and append-only chain-of-custody logs, multi-source incident
+exports normalized into one UTC-ordered timeline, corroboration-gated
+identifier research worksheets, image metadata extraction with
+synthetic-media flagging, and case management with linking, statuses,
+and generated synopses. One console orchestrates every module behind a
+risk-tier system — person-affecting actions run only after a reasoned,
+logged attestation.
+</p>
+
+{% include rule.html label="darknet research" %}
+
+<div class="idx">
+  <a class="idx-item" href="https://v0idravl.github.io">
+    <span class="t">v0idravl.github.io</span><span class="dots"></span><span class="m">published dnm analyses</span>
+  </a>
+</div>
+
+<h3>v0idravl.github.io</h3>
+<p>
+Published darknet and anonymity-network analyses: Tor / I2P / DNM
+ecosystem research, vendor and marketplace profiling, cross-platform
+identity resolution, and opsec failure analysis — where attribution
+succeeds and where investigations break. On-chain analysis, address
+clustering, and relationship-graph construction where the money moves.
+Every piece signed and timestamped, held to the two-source corroboration
+standard: nothing single-source goes in a report.
+</p>
+
+
+
 {% include rule.html label="terminal tools" %}
 
 <p>
@@ -85,117 +199,6 @@ fuzzel, and a live theme system. Deliberately small: no installer, nothing
 needs sudo, and nothing touches the system outside $HOME.
 </p>
 
-{% include rule.html label="case-work tooling" %}
-
-<p>
-One repository, one security model: stdlib-only Python 3.11+, offline-first,
-read-only on evidence. The standalone cust0dia / h4ndl3 / m3talex repos are
-superseded by the monorepo.
-</p>
-
-<div class="idx">
-  <a class="idx-item" href="https://github.com/v0idravl/chr0nix">
-    <span class="t">chr0nix</span><span class="dots"></span><span class="m">investigative-doc suite</span>
-  </a>
-</div>
-
-<h3>chr0nix</h3>
-<p>
-The consolidated investigative-documentation suite: SHA-256 exhibit
-manifests and append-only chain-of-custody logs, multi-source incident
-exports normalized into one UTC-ordered timeline, corroboration-gated
-identifier research worksheets, image metadata extraction with
-synthetic-media flagging, and case management with linking, statuses,
-and generated synopses. One console orchestrates every module behind a
-risk-tier system — person-affecting actions run only after a reasoned,
-logged attestation.
-</p>
-
-{% include rule.html label="darknet research" %}
-
-<div class="idx">
-  <a class="idx-item" href="https://v0idravl.github.io">
-    <span class="t">v0idravl.github.io</span><span class="dots"></span><span class="m">published dnm analyses</span>
-  </a>
-</div>
-
-<h3>v0idravl.github.io</h3>
-<p>
-Published darknet and anonymity-network analyses: Tor / I2P / DNM
-ecosystem research, vendor and marketplace profiling, cross-platform
-identity resolution, and opsec failure analysis — where attribution
-succeeds and where investigations break. On-chain analysis, address
-clustering, and relationship-graph construction where the money moves.
-Every piece signed and timestamped, held to the two-source corroboration
-standard: nothing single-source goes in a report.
-</p>
-
-{% include rule.html label="public work" %}
-
-<div class="idx">
-  <a class="idx-item" href="https://github.com/v0idravl/traxerax-lite">
-    <span class="t">traxerax-lite</span><span class="dots"></span><span class="m">host defense + ebpf audit</span>
-  </a>
-  <a class="idx-item" href="https://v0idravl.github.io/lab-writeups">
-    <span class="t">lab-writeups</span><span class="dots"></span><span class="m">documented analysis</span>
-  </a>
-  <a class="idx-item" href="https://v0idravl.github.io/hakiki">
-    <span class="t">hakiki</span><span class="dots"></span><span class="m">technical reference</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/p0rtix">
-    <span class="t">p0rtix</span><span class="dots"></span><span class="m">recon, tui / cli / mcp</span>
-  </a>
-  <a class="idx-item" href="https://github.com/v0idravl/sliver-mcp">
-    <span class="t">sliver-mcp</span><span class="dots"></span><span class="m">c2 via ai agent</span>
-  </a>
-</div>
-
-<h3>traxerax-lite</h3>
-<p>
-Self-contained Linux host defense and audit: multi-source log correlation,
-live host telemetry, configuration and hardening audits, file integrity
-monitoring, and cross-run change detection — plus an optional eBPF kernel
-probe that surfaces rootkit and compromise indicators. Behavioral detection,
-no signatures, no network calls: host state turned into a structured account
-of what changed and what actually matters.
-</p>
-
-<h3>lab-writeups</h3>
-<p>
-70+ documented offensive-security lab engagements (hackthebox, proving
-grounds, tryhackme), redacted for public release. Fourteen Active
-Directory boxes running full kill chains — null-session enumeration to
-AS-REP roasting to DCSync, Kerberoasting, ADCS and ACL abuse, BloodHound
-path reasoning, password spraying under lockout constraints — plus ~50
-Linux and 10 Windows targets covering web exploitation, LFI-to-upload
-chains, and SUID/GTFOBins privilege escalation. Every writeup closes with
-root cause, impact, remediation, and detection opportunities — every claim
-traceable to a command, a log, or a screenshot.
-</p>
-
-<h3>hakiki</h3>
-<p>
-A command-first offensive quick reference distilled from repeated lab work —
-29 pages across recon, web exploitation, credentials, exploit dev,
-reversing, privesc, Active Directory, and post-exploitation. The AD page
-runs the full kill chain with exact invocations; noisy techniques carry an
-explicit PT-only tag. Authorized use only.
-</p>
-
-<h3>p0rtix</h3>
-<p>
-A scope-aware enumeration framework, runnable standalone (interactive TUI or
-headless CLI) or over MCP, with evidence preserved as raw command logs —
-every action logged and exportable.
-</p>
-
-<h3>sliver-mcp</h3>
-<p>
-The sliver c2 operator surface — listeners, implant generation, sessions,
-command execution — exposed as MCP tools an ai agent can drive behind an
-explicit safety gate. Adversary emulation for defenders; authorized use
-only.
-</p>
 
 {% include rule.html label="profiles" %}
 
